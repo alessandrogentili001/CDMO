@@ -1,0 +1,82 @@
+{
+  "no_sym": {
+    "time": 0,
+    "optimal": true,
+    "obj": 12,
+    "sol": [
+      [
+        5,
+        4,
+        2
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        6,
+        1
+      ]
+    ]
+  },
+  "sym": {
+    "time": 0,
+    "optimal": true,
+    "obj": 12,
+    "sol": [
+      [
+        5,
+        4,
+        2
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        6,
+        1
+      ]
+    ]
+  },
+  "sym_subtour_elim": {
+    "time": 0,
+    "optimal": true,
+    "obj": 12,
+    "sol": [
+      [
+        5,
+        4,
+        2
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        6,
+        1
+      ]
+    ]
+  },
+  "sym_subtour_elim_heur": {
+    "time": 0,
+    "optimal": true,
+    "obj": 12,
+    "sol": [
+      [
+        3,
+        6,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        7,
+        1
+      ]
+    ]
+  }
+}

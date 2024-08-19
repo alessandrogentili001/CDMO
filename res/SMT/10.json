@@ -1,0 +1,20 @@
+{
+  "no_ysm": {
+    "time": 300,
+    "optimal": false,
+    "obj": false,
+    "sol": false
+  },
+  "sym": {
+    "time": 300,
+    "optimal": false,
+    "obj": false,
+    "sol": false
+  },
+  "sym_subtour_elim": {
+    "time": 300,
+    "optimal": false,
+    "obj": false,
+    "sol": false
+  }
+}

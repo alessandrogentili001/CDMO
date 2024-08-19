@@ -1,0 +1,26 @@
+{
+  "no_sym": {
+    "time": 300,
+    "optimal": false,
+    "obj": null,
+    "sol": null
+  },
+  "sym": {
+    "time": 300,
+    "optimal": false,
+    "obj": null,
+    "sol": null
+  },
+  "sym_subtour_elim": {
+    "time": 300,
+    "optimal": false,
+    "obj": null,
+    "sol": null
+  },
+  "sym_subtour_elim_heur": {
+    "time": 300,
+    "optimal": false,
+    "obj": null,
+    "sol": null
+  }
+}

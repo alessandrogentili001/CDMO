@@ -1,0 +1,44 @@
+{
+  "no_ysm": {
+    "time": 0,
+    "optimal": true,
+    "obj": 206,
+    "sol": [
+      [
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ]
+  },
+  "sym": {
+    "time": 0,
+    "optimal": true,
+    "obj": 206,
+    "sol": [
+      [
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ]
+  },
+  "sym_subtour_elim": {
+    "time": 0,
+    "optimal": true,
+    "obj": 206,
+    "sol": [
+      [
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ]
+  }
+}

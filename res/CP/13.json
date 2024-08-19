@@ -1,0 +1,80 @@
+{
+  "no_sym": {
+    "time": 300,
+    "optimal": false,
+    "obj": null,
+    "sol": null
+  },
+  "sym": {
+    "time": 300,
+    "optimal": false,
+    "obj": null,
+    "sol": null
+  },
+  "sym_subtour_elim": {
+    "time": 300,
+    "optimal": false,
+    "obj": null,
+    "sol": null
+  },
+  "sym_subtour_elim_heur": {
+    "time": 300,
+    "optimal": false,
+    "obj": 1578,
+    "sol": [
+      [
+        30,
+        36,
+        32,
+        22,
+        33,
+        24,
+        47,
+        27,
+        19,
+        16,
+        21,
+        13,
+        31,
+        2,
+        14,
+        42,
+        43,
+        38,
+        23
+      ],
+      [
+        15,
+        35,
+        1,
+        37,
+        18,
+        7,
+        46,
+        34,
+        4,
+        39,
+        28,
+        10,
+        5
+      ],
+      [
+        12,
+        3,
+        25,
+        41,
+        8,
+        17,
+        9,
+        26,
+        11,
+        20,
+        45,
+        6,
+        29,
+        40,
+        44
+      ]
+    ]
+  }
+}

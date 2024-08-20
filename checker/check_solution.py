@@ -98,8 +98,7 @@ def main(args):
             max_dist = dist
             max_path = path
             max_cour = courier_id
-          if courier_id == n_couriers - 1: break # last courirer checked 
-          else: courier_id += 1 # new courier
+          courier_id += 1 # new courier --> check new path in the solution 
         if max_dist != result['obj']:
           errors += [f"{header}: objective value {result['obj']} inconsistent with max. distance {max_dist} of path {max_path}, courier {max_cour})"]
         i = int(inst_number)

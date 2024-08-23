@@ -75,7 +75,7 @@ env = gp.Env(params=params)
 
 for i in range(1, 22):
     instance = f"{i:02d}"
-    file_name = f"/project/Instances/inst{instance}.dat"
+    file_name = f"Instances/inst{instance}.dat"
 
     with open(file_name, "r") as f:
         m = int(f.readline())

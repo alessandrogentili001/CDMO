@@ -11,12 +11,12 @@ RUN pip install numpy
 RUN pip install typing
 
 # set the working directory
-WORKDIR /dascenzo_gentili_CODM
+WORKDIR /CDMO
 
 # copy the content in the working directory 
 ADD . .
 
-# run command (checking solution found)
+# run command (run checker)
 CMD ["python", "./checker/check_solution.py", "./checker/InputFolder", "./checker/ResultFolder"]
 
 ############################# ON YOUR MACHINE #############################

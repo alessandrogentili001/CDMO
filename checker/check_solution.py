@@ -21,7 +21,10 @@ def read_json_file(file_path):
 
 def main(args):
   '''
-  check_solution.py <input folder> <results folder>
+  from command line perform the following instruction in order to run this solution checker properly:
+      
+      python checker\check_solution.py checker\InputFolder checker\ResultFolder
+      
   '''
   #FIXME: Input folder contains the input files (in the format instXY.dat). 
   #       The results folder contains the .json file of each approach. 

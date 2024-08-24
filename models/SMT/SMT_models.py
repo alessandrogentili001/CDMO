@@ -50,8 +50,8 @@ def solve_mcp_no_sym(m: int, n: int, l: List[int], s: List[int], D: List[List[in
     add_x_constraints(optimizer, m, n, x, l, s)
     add_y_constraints(optimizer, m, n, x, y)
     add_distance_constraints(optimizer, m, n, y, distances, max_distance, D_func)
-    #add_symmetry_breaking_constraints(optimizer, m, n, l, x)
-    #add_subtour_elimination_constraints(optimizer, m, n, x, y, u)
+    # add_symmetry_breaking_constraints(optimizer, m, n, l, x)
+    # add_subtour_elimination_constraints(optimizer, m, n, x, y, u)
 
     optimizer.minimize(Select(max_distance, 0))
 
@@ -81,7 +81,7 @@ def solve_mcp_sym(m: int, n: int, l: List[int], s: List[int], D: List[List[int]]
     add_y_constraints(optimizer, m, n, x, y)
     add_distance_constraints(optimizer, m, n, y, distances, max_distance, D_func)
     add_symmetry_breaking_constraints(optimizer, m, n, l, x)
-    #add_subtour_elimination_constraints(optimizer, m, n, x, y, u)
+    # add_subtour_elimination_constraints(optimizer, m, n, x, y, u)
 
     optimizer.minimize(Select(max_distance, 0))
 

@@ -101,13 +101,13 @@ def solve_mcp(model_path, instance_path, time_limit=None):
         return 300, False, None, None
 
 def run_mcp_solver(input_folder, output_folder, approaches):
-    # Assicurati che la cartella di output esista
+    # be sure that the output folder exists
     os.makedirs(output_folder, exist_ok=True)
     
-    # Itera su tutti i file nella cartella di input
+    # loop over the files in the input folder
     for instance_file in sorted(os.listdir(input_folder)):
         if instance_file.startswith('.'):
-            # Salta i file nascosti
+            # skip hidden files
             continue
         
         instance_num = re.search(r'\d+', instance_file).group() 
@@ -120,7 +120,7 @@ def run_mcp_solver(input_folder, output_folder, approaches):
             print('-' * 50)
             result = solve_mcp(model_path, instance_path, time_limit=300)
             
-            # Genera i file JSON
+            # build json files 
             if result: # solution found 
                 time_taken, optimal, obj, sol = result
                 results[approach] = {
@@ -137,7 +137,7 @@ def run_mcp_solver(input_folder, output_folder, approaches):
                     "sol": None
                 }
         
-        # Percorso del file di output per questa istanza
+        # complete outpute file for each instance
         file_path = os.path.join(output_folder, "CP")
         file_path = os.path.join(file_path, f"{instance_num}.json")
         with open(file_path, 'w') as f:

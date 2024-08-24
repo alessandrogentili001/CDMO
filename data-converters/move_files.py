@@ -1,9 +1,16 @@
 import os
 import shutil
 
+'''
+from the command line perform the following instruction in order to run this script properly: 
+
+    python ./data-converters/move_files.py
+    
+'''
+
 # Define the source and destination directories
-source_dir = 'res'
-destination_dir = 'checker/ResultFolder'
+source_dir = './res'
+destination_dir = './checker/ResultFolder'
 
 # Ensure the destination directory exists
 if not os.path.exists(destination_dir):
@@ -29,4 +36,4 @@ for item in os.listdir(source_dir):
         shutil.copytree(source_path, destination_path)
         print(f"Copied directory: {item}")
 
-print("All directories have been copied.")
+print(f"All directories have been copied from {source_dir} to {destination_dir}.")

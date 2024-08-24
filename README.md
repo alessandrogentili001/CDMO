@@ -4,6 +4,8 @@
 
 This repository contains implementations of various approaches to solve the Multiple Couriers Problem (MCP). The MCP is a variant of the Vehicle Routing Problem where multiple couriers need to deliver packages to different locations while minimizing the maximum distance traveled by any courier.
 
+You can find a detailed problem description at **CDMO-project-description.pdf**.
+
 ## Approaches Implemented
 
 1. **Constraint Programming (CP)**: Uses constraint satisfaction techniques to model and solve the problem.
@@ -21,7 +23,7 @@ CDMO/
 │   ├── ResultFolder/
 │   └── check_solution.py
 |
-├── data converters/
+├── data-converters/
 │   ├── fromDATtoDZN.py
 │   ├── fromDZNtoPY.py
 │   └── move_files.py
@@ -60,8 +62,9 @@ CDMO/
 │   ├── SAT/
 │   └── SMT/
 │
-├── dockerfile
+├── Dockerfile
 ├── README.md
+├── Description.pdf
 └── Report.pdf
 ```
 
@@ -93,13 +96,13 @@ CDMO/
 
 2. Activate the virtual environment:
 
-    ```
-    docker run dascenzo_gentili_project
-    ```
+   ```
+   docker run dascenzo_gentili_project
+   ```
 
 ### Reproduce the Experiments
 
-1. Run the experiment script (look at the python file for understand the args):
+1. Run the experiment script (look at the python file to better understand the args):
 
    ```
    python ./models/run_all.py [args]
@@ -108,10 +111,10 @@ CDMO/
 2. After the experiments complete, move the files into the `./checker/ResultFolder` folder for checking solutions:
 
    ```
-   python ./dataconverters/move_files.py
+   python ./data-converters/move_files.py
    ```
 
-3. check solution:
+3. finally check experimental results:
 
    ```
    python ./checker/check_solution.py ./checker/InputFolder ./checker/ResultFolder
@@ -126,4 +129,4 @@ Each solver implementation is contained in its respective sub-directory in the `
 - `./models/SAT/SAT_models.py`: Implements the Mixed Integer Programming approach using the z3 library.
 - `./models/SMT/SMT_models.py`: Implements the Satisfiability Modulo Theory approach using the Z3 library.
 
-To explore a specific implementation, open the corresponding file in your preferred text editor or IDE.
+To play with a specific implementation, open the corresponding file in your preferred IDE.

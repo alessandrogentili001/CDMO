@@ -16,8 +16,12 @@ WORKDIR /CDMO
 # copy the content in the working directory 
 ADD . .
 
-# run command (run checker)
-CMD ["python", "./checker/check_solution.py", "./checker/InputFolder", "./checker/ResultFolder"]
+# run command
+# CMD ["python", "./checker/check_solution.py", "./checker/InputFolder", "./checker/ResultFolder"]   # run checker
+CMD ["python", "models/run_all.py", "models/CP/generateResultsCP.py"]                            # run CP model
+# CMD ["python", "models/run_all.py", "models/MIP/generateResultsMIP.py"]                          # run MIP model
+# CMD ["python", "models/run_all.py", "models/SAT/generateResultsSAT.py"]                          # run SAT model
+# CMD ["python", "models/run_all.py", "models/SMT/generateResultsSMT.py"]                          # run SMT model
 
 ############################# ON YOUR MACHINE #############################
 # build the docker image

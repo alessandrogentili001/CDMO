@@ -11,8 +11,14 @@ for script in scripts:
     
 ''' 
 
-from commmand line perform the following instruction in order to generate results for all the models:
+from commmand line perform the following instruction in order to eun this script properly:
 
-python models/run_all.py models/CP/generateResultsCP.py models/MIP/generateResultsMIP.py  models/SAT/generateResultsSAT.py  models/SMT/generateResultsSMT.py 
+    python models/run_all.py models/CP/generateResultsCP.py models/MIP/generateResultsMIP.py  models/SAT/generateResultsSAT.py  models/SMT/generateResultsSMT.py
+
+you can olso select the specific model you want to run, for example:
+
+    python models/run_all.py models/CP/generateResultsCP.py
+
+runs only the CP model.
 
 '''

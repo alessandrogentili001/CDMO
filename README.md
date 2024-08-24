@@ -125,8 +125,8 @@ CDMO/
 Each solver implementation is contained in its respective sub-directory in the `models` directory. Here's a brief overview of each:
 
 - `./models/CP/CP_models`: Implements the Constraint Programming approach using MiniZinc.
-- `./models/MIP/MIP_models.py`: Implements the SAT solver approach using the GurobyPy library.
+- `./models/MIP/MIP_models.py`: Implements the SAT solver approach using the GurobiPy library.
 - `./models/SAT/SAT_models.py`: Implements the Mixed Integer Programming approach using the z3 library.
-- `./models/SMT/SMT_models.py`: Implements the Satisfiability Modulo Theory approach using the Z3 library.
+- `./models/SMT/SMT_models.py`: Implements the Satisfiability Modulo Theory approach using the z3 library.
 
 To play with a specific implementation, open the corresponding file in your preferred IDE.

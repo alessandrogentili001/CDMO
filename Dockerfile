@@ -24,7 +24,9 @@ CMD ["python", "./checker/check_solution.py", "./checker/InputFolder", "./checke
 # CMD ["python", "models/run_all.py", "models/SMT/generateResultsSMT.py"]                          # run SMT model
 
 ############################# ON YOUR MACHINE #############################
+
 # build the docker image
-# docker build -t dascenzo_gentili_project .
+#   docker build -t dascenzo_gentili_project .
+
 # run the docker image
-# docker run dascenzo_gentili_project
+#   docker run dascenzo_gentili_project

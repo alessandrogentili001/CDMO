@@ -2,7 +2,7 @@
 
 # Contributors 
 
-- Alessadro Gentili - [GitHub](https://github.com/alessandrogentili001)
+- Alessandro Gentili - [GitHub](https://github.com/alessandrogentili001)
 
 - Lorenzo D'ascenzo - [GitHub](https://github.com/Lorenzo00dash)
 

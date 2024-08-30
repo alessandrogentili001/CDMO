@@ -1,6 +1,6 @@
 # COMBINATORIAL DECISION MAKING AND OPTIMIZATION - FINAL PROJECT - A.Y. 2023/2024
 
-## contributors 
+## Contributors 
 
 - Alessadro Gentili: [GitHub](https://github.com/alessandrogentili001)
 

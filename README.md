@@ -1,5 +1,11 @@
 # COMBINATORIAL DECISION MAKING AND OPTIMIZATION - FINAL PROJECT - A.Y. 2023/2024
 
+## contributors 
+
+- Alessadro Gentili: [GitHub](https://github.com/alessandrogentili001)
+
+- Lorenzo D'ascenzo: [GitHub](https://github.com/Lorenzo00dash)
+
 # Multiple Couriers Problem Solver
 
 This repository contains implementations of various approaches to solve the Multiple Couriers Problem (MCP). The MCP is a variant of the Vehicle Routing Problem where multiple couriers need to deliver packages to different locations while minimizing the maximum distance traveled by any courier.
@@ -77,7 +83,7 @@ CDMO/
 
 1. Open a terminal or command prompt.
 
-2. Run the following command:
+2. clone the repository:
 
    ```
    git clone https://github.com/alessandrogentili001/CDMO.git
@@ -89,23 +95,15 @@ CDMO/
    cd CDMO
    ```
 
-### Setting Up the Docker
+4. install all the dependeces:
 
-1. create a docker image:
-
-   ```
-   docker build -t dascenzo_gentili_project .
-   ```
-
-2. Activate the virtual environment:
-
-   ```
-   docker run dascenzo_gentili_project
-   ```
+   '''
+   pip install -r requirements.txt
+   '''
 
 ### Reproduce the Experiments
 
-1. Run the experiment script (look at the python file to better understand the args):
+1. Run the experiment script (look at `./models/run_all` to better understand the args):
 
    ```
    python ./models/run_all.py [args]
@@ -123,6 +121,22 @@ CDMO/
    python ./checker/check_solution.py ./checker/InputFolder ./checker/ResultFolder
    ```
 
+### Setting Up the Docker
+
+1. create a docker image:
+
+   ```
+   docker build -t dascenzo_gentili_project .
+   ```
+
+2. Activate the virtual environment:
+
+   ```
+   docker run dascenzo_gentili_project
+   ```
+
+3. Run the docker image in order to check automatically the results obtained.
+
 ### Exploring the Source Code
 
 Each solver implementation is contained in its respective sub-directory in the `models` directory. Here's a brief overview of each:
@@ -132,4 +146,4 @@ Each solver implementation is contained in its respective sub-directory in the `
 - `./models/SAT/SAT_models.py`: Implements the Mixed Integer Programming approach using the z3 library.
 - `./models/SMT/SMT_models.py`: Implements the Satisfiability Modulo Theory approach using the z3 library.
 
-To play with a specific implementation, open the corresponding file in your preferred IDE.
+To play with a specific implementation, open the corresponding file in your preferred IDE and modify it.

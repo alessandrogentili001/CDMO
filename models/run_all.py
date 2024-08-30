@@ -11,7 +11,7 @@ for script in scripts:
     
 ''' 
 
-from commmand line perform the following instruction in order to eun this script properly:
+from commmand line perform the following instruction in order to run this script properly:
 
     python models/run_all.py models/CP/generateResultsCP.py models/MIP/generateResultsMIP.py  models/SAT/generateResultsSAT.py  models/SMT/generateResultsSMT.py
 

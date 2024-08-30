@@ -49,9 +49,7 @@ def create_route_images(json_folder):
             plt.savefig(image_path)
             plt.close()
 
-
-
-
 # Folder containing the JSON files
-json_folder = 'res/MIP'
-create_route_images(json_folder)
+for approach in ['CP', 'MIP', 'SMT']: # SAT model is not working 
+    json_folder = './res/' + approach
+    create_route_images(json_folder)

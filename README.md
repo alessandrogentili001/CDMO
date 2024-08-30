@@ -29,9 +29,12 @@ CDMO/
 │   └── move_files.py
 |
 ├── images/
-│   ├── 
-│   ├── 
-│   └── 
+│   ├── plot_routes.py
+│   ├── plot_times.py
+│   ├── execution_time_plots/
+│   ├── route_images_CP/
+│   ├── route_images_MIP/
+│   └── route_images_SMT/
 |
 ├── instances/
 |
@@ -65,7 +68,7 @@ CDMO/
 ├── Dockerfile
 ├── README.md
 ├── Description.pdf
-└── Report.pdf
+└── Report.pdfs
 ```
 
 ## Getting Started

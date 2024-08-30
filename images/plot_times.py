@@ -63,5 +63,6 @@ def plot_execution_times(json_folder):
     plt.close()
 
 # Folder containing the JSON files
-json_folder = './res/MIP/'
-plot_execution_times(json_folder)
+for approach in ['CP', 'MIP', 'SMT']: # SAT model is not working  
+    json_folder = './res/' + approach
+    plot_execution_times(json_folder)

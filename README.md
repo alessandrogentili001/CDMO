@@ -1,10 +1,10 @@
 # COMBINATORIAL DECISION MAKING AND OPTIMIZATION - FINAL PROJECT - A.Y. 2023/2024
 
-## Contributors 
+# Contributors 
 
-- Alessadro Gentili: [GitHub](https://github.com/alessandrogentili001)
+- Alessadro Gentili - [GitHub](https://github.com/alessandrogentili001)
 
-- Lorenzo D'ascenzo: [GitHub](https://github.com/Lorenzo00dash)
+- Lorenzo D'ascenzo - [GitHub](https://github.com/Lorenzo00dash)
 
 # Multiple Couriers Problem Solver
 

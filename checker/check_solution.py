@@ -36,7 +36,7 @@ def main(args):
     if subfolder.startswith('.'):
       # Skip hidden folders.
       continue
-    folder = results_folder + '/' + subfolder
+    folder = results_folder + '/' + subfolder # MODIFIED THIS LINE IN ORDER TO GET INTO THE DIRECTORY PROPERLY! <<<---
     print(f'\nChecking results in {folder} folder')
     for results_file in sorted(os.listdir(folder)):
       if results_file.startswith('.'):
@@ -52,27 +52,25 @@ def main(args):
       with open(inst_path) as inst_file:
         i = 0        
         for line in inst_file:
-          if i == 0: # number of couriers
+          if i == 0:
             n_couriers = int(line)
-          elif i == 1: # number of items
+          elif i == 1:
             n_items = int(line)
             dist_matrix = [None] * (n_items + 1)
-          elif i == 2: # maximum load
+          elif i == 2:
             capacity = [int(x) for x in line.split()]
             assert len(capacity) == n_couriers
-          elif i == 3: # item sizes
+          elif i == 3:
             sizes = [int(x) for x in line.split()]
             assert len(sizes) == n_items
-          else: # distance matrix 
+          else:
             row = [int(x) for x in line.split()]
             assert len(row) == n_items + 1
             dist_matrix[i-4] = [int(x) for x in row]
           i += 1
-          if i > 1: 
-            if i > n_items + 4: break # must not exceed the number of rows of the distance matrix
       for i in range(len(dist_matrix)):
         assert dist_matrix[i][i] == 0
-      for solver, result in results.items(): # check results 
+      for solver, result in results.items():
         print(f'\t\tChecking solver {solver}')
         header = f'Solver {solver}, instance {inst_number}'
         if result['time'] < 0 or result['time'] > TIMEOUT:
@@ -94,14 +92,14 @@ def main(args):
             prev_item = path[i-1] - 1            
             dist += dist_matrix[prev_item][curr_item]
             if i < len(path) - 1:
-              path_size += sizes[curr_item]       
+              path_size += sizes[curr_item]
           if path_size > capacity[courier_id]:
             errors += [f"{header}: path {path} of courier {courier_id} has total size {path_size}, exceeding its capacity {capacity[courier_id]}"]
           if dist > max_dist:
             max_dist = dist
             max_path = path
             max_cour = courier_id
-          courier_id += 1 # new courier --> check new path in the solution 
+          courier_id += 1
         if max_dist != result['obj']:
           errors += [f"{header}: objective value {result['obj']} inconsistent with max. distance {max_dist} of path {max_path}, courier {max_cour})"]
         i = int(inst_number)
@@ -123,6 +121,6 @@ def main(args):
   else:
     print('No errors detected!')
   
-
+  
 if __name__ == "__main__":
     main(sys.argv)
